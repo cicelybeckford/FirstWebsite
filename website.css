@@ -1,11 +1,11 @@
 .header {
-	background: #E6E4D2;
+	background: #FFE4B5;
 	padding: 3px;
 	text-align: center;
 }
 	
 .topnav {
-	background: #F2F0E0;
+	background: #FFEBCD;
   overflow: hidden;
 }
 
@@ -15,18 +15,18 @@
 	color: #000000;
 	float: left;
 	text-align: center;
-	padding: 3px 80px;
+	padding: 3px 64.91px;
 	font-weight: bold;
 }
 
 .topnav a:hover {
-	background-color: #FFFFFF;
-  color: black;
+	background-color: #A9A9A9;
+  color: white;
 }
 
 .topnav a.active {
-  background: #000000;
-	color: white;
+  background: #FFFFF0;
+	color: black;
 }
 
 .left {
@@ -34,14 +34,23 @@
    padding: 0 20px 20px 0;
 }
 
+img {
+	width: 480px;
+	height: 480px;
+}
+
 #header {
-	background: #FFEBCD;
+	background: #FFDAB9;
 	padding: 1px 1px;
 	text-align: center;
 }
 
 body {
     font-family: Tahoma, Geneva, sans-serif;
+    max-width: 950px;
+    padding: 10px;
+    margin: auto;
+    background: #FFFFF0;
 }
 
 #paragraph {
