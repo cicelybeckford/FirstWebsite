@@ -11,11 +11,12 @@
 
 .topnav a {
 	text-decoration: none;
-	display: block;
-	color: #000000;
+	display: inline;
 	float: left;
+	width: 180px;
+	color: #000000;
 	text-align: center;
-	padding: 3px 64.91px;
+	padding: 5px 5px;
 	font-weight: bold;
 }
 
@@ -30,32 +31,68 @@
 }
 
 .left {
-   float: left;
-   padding: 0 20px 20px 0;
+  float: left;
+  border: 3px solid black;
 }
 
-img {
+.img {
 	width: 480px;
 	height: 480px;
+}
+
+.slideshow {
+	width: 700px;
+	height: 400px;
+	display: block;
+  margin: auto;
+  border: 15px solid black;
 }
 
 #header {
 	background: #FFDAB9;
 	padding: 1px 1px;
 	text-align: center;
+	margin-left: auto;
+  width: auto;
+  height: 65px;
 }
 
 body {
-    font-family: Tahoma, Geneva, sans-serif;
-    max-width: 950px;
-    padding: 10px;
-    margin: auto;
-    background: #FFFFF0;
+	font-family: Tahoma, Geneva, sans-serif;
+  max-width: 950px;
+  padding: 10px;
+  margin: auto;
+  background: #FFFFF0;
 }
 
 #paragraph {
-    font-size: 17px;
-    text-align: justify;
+  font-size: 17px;
+  text-align: justify;
+  margin-left: auto;
+  width: 440px;
+  height: 400px;
+}
+
+table {
+	padding: 10px 50px;
+	width: auto;
+}
+
+td {
+	padding: 3px;
+	width: 75%;
+}
+
+li {
+	padding: 15px;
+	margin-left: auto;
+	width: 400px;
+}
+
+.clock{
+	color: #00000;
+	font-weight: 100;
+	font-size: 30px;
 }
 
 
