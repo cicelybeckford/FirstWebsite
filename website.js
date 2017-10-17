@@ -101,14 +101,16 @@ window.onkeydown = function(evt)
 window.onscroll = function(e)
 {
 	var e = window.event || e;
- 	var direction = window.scrollTop;
- 	document.writeln(direction);
- 	if (direction >= 1) 
+ 	var direction =  window.scrollY;
+  document.writeln(direction);
+ 	if (direction > 1) 
  	{
-  	goLeft();
+  	 goLeft();
   }
- 	else 
- 		goRight();
+ 	else if (direction <= 1)
+ 	{
+ 		 goRight();
+ 	}
 }
 
 function activitycheck() 
