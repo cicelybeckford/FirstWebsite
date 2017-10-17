@@ -100,12 +100,29 @@ window.onkeydown = function(evt)
 
 this.addEventListener('wheel', function (event)
 {
-	if (event.deltaY > 0) 
+	var pagepath = window.location.pathname;
+	var currentpage = pagepath.split("/").pop();
+	if (currentpage != "projects.html")
 	{
-		goRight();
-  } else if (event.deltaY < 0) 
-  {
-    goLeft();
+		if (event.deltaY > 3) 
+		{
+			goRight();
+  	}
+   	else if (event.deltaY < -3) 
+  	{
+    	goLeft()
+		}
+	}
+	else
+	{
+		if (event.deltaY > 10) 
+		{
+			goRight();
+  	} 	
+  	else if (event.deltaY < -3) 
+ 		{
+    	goLeft()
+    }
   }
 });
 
