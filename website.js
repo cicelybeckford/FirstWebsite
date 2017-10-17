@@ -98,20 +98,16 @@ window.onkeydown = function(evt)
 	}
 };
 
-window.onscroll = function(e)
+this.addEventListener('wheel', function (event)
 {
-	var e = window.event || e;
- 	var direction =  window.scrollY;
-  document.writeln(direction);
- 	if (direction > 1) 
- 	{
-  	 goLeft();
+	if (event.deltaY > 0) 
+	{
+		goRight();
+  } else if (event.deltaY < 0) 
+  {
+    goLeft();
   }
- 	else if (direction <= 1)
- 	{
- 		 goRight();
- 	}
-}
+});
 
 function activitycheck() 
 {
